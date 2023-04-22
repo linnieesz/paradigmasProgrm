@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomePageModule } from 'src/app/home-page/home-page.module';
 import { LoginModule } from 'src/app/login/login.module';
 import { FormsModule } from '@angular/forms';
+import { MenuModule } from './menu/menu.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FormsModule } from '@angular/forms';
     BrowserAnimationsModule,
     FormsModule,
     HomePageModule,
-    LoginModule
+    LoginModule,
+    MenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]
