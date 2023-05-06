@@ -11,6 +11,8 @@ export class LoginComponent {
   constructor(private router: Router) {}
 
   click() {
-    this.router.navigate(['/home']);
+    //fazer service pra enviar o usuário/senha p api
+    //usar try-catch para melhorar a sequência de erros
+    this.router.navigate(['']);
   }
 }

@@ -4,10 +4,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HomePageModule } from 'src/app/home-page/home-page.module';
-import { LoginModule } from 'src/app/login/login.module';
+import { HomePageModule } from 'src/app/components/home-page/home-page.module';
+import { LoginModule } from 'src/app/components/login/login.module';
 import { FormsModule } from '@angular/forms';
-import { MenuModule } from './menu/menu.module';
+import { MenuModule } from './components/menu/menu.module';
+import { RegisterModule } from './register/register.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { MenuModule } from './menu/menu.module';
     FormsModule,
     HomePageModule,
     LoginModule,
-    MenuModule
+    MenuModule,
+    RegisterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

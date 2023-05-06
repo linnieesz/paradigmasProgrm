@@ -1,0 +1,102 @@
+/* header */
+.home-header {
+    width: 100%;
+    height: 12%;
+    background-color: #fff;
+}
+
+.logo {
+    height: 100%;
+    float: left;
+    display: flex;
+}
+
+.logo-image {
+    margin-top: 10px;
+    margin-left: 70px;
+    height: 60px;
+}
+
+#logo-title {
+    bottom: 20px;
+    position: relative;
+    margin-left: 12px;
+    height: auto;
+    font-style: normal;
+    font-size: 26px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #000000;
+}
+
+.logo-image,
+#logo-title {
+    display: inline-block;
+}
+
+.btn {
+    background-color: #9D6FD1;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 9px;
+}
+
+.btn-enter {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+
+    color: #FFFFFF;
+
+    float: right;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 90px;
+}
+
+/* body */
+
+.home-body {
+    display: flex;
+    background-color: #C8EEEF;
+    height: 87%;
+    width: 100%;
+}
+
+.home-text {
+    height: 50%;
+    position: relative;
+    top: 25%;
+    left: 6%;
+}
+
+.presentation-box {
+    width: 37%;
+}
+
+.home-presentation {
+    font-family: 'B612 Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: 0.098em;
+    line-height: 0.8em;
+
+    color: #000000;
+}
+
+.home-art {
+    margin-right: 150px;
+    display: inline-block;
+}
+
+.home-image {
+    height: 450px;
+    width: 350px;
+}
+
+.app-exp {
+    width: 450px;
+    font-size: 16px;
+}
