@@ -1,4 +1,4 @@
-import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -8,7 +8,7 @@ import { HomePageModule } from 'src/app/components/home-page/home-page.module';
 import { LoginModule } from 'src/app/components/login/login.module';
 import { FormsModule } from '@angular/forms';
 import { MenuModule } from './components/menu/menu.module';
-import { RegisterModule } from './register/register.module';
+import { RegisterModule } from './components/register/register.module';
 
 @NgModule({
   declarations: [
@@ -22,10 +22,11 @@ import { RegisterModule } from './register/register.module';
     HomePageModule,
     LoginModule,
     MenuModule,
-    RegisterModule
+    RegisterModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   
 })
 export class AppModule { }

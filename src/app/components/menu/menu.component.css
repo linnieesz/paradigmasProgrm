@@ -1,0 +1,35 @@
+.app_menu {
+    background-color: #9D6FD1;
+    display: flex;
+    align-items: center;
+    height: 8.5%;
+}
+
+.buttons_left div {
+    float: left;
+    margin-right: 1em;
+}
+
+.register_patient {
+    margin-left: 2em;
+}
+
+.buttons_right {
+    margin-left: auto;
+    margin-right: 2em;
+}
+
+.buttons_pattern {
+    text-transform: uppercase;
+    border-radius: 2em;
+    border: none;
+    width: 9em;
+    background-color: #fff;
+    padding: 0.5em 1em;
+}
+
+  @media (min-width: 1920px) {
+    .app_menu {
+        height: 6%;
+    }
+  }
