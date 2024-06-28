@@ -9,4 +9,8 @@ import { Router } from '@angular/router';
 export class WorkspaceComponent {
 
   constructor(private router: Router) {}
+
+  redirectToFiles() {
+    return this.router.navigate(['/files'])
+  }
 }

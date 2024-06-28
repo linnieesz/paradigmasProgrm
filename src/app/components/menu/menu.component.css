@@ -1,8 +1,7 @@
 .app_menu {
-    background-color: #9D6FD1;
     display: flex;
     align-items: center;
-    height: 8.5%;
+    height: 10%;
 }
 
 .buttons_left div {
@@ -26,10 +25,15 @@
     width: 9em;
     background-color: #fff;
     padding: 0.5em 1em;
+    cursor: pointer;
+}
+
+.buttons_pattern:hover {
+    background-color: #f4f4f4;
 }
 
   @media (min-width: 1920px) {
     .app_menu {
-        height: 6%;
+        height: 7%;
     }
   }

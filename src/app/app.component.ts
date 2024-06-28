@@ -12,7 +12,7 @@ export class AppComponent {
   constructor(private router: Router) { }
 
   verify() {
-    if (this.router.url == '/workspace') {
+    if (this.router.url == '/workspace' ||  this.router.url == '/calendar' || this.router.url == '/files') {
       return true
     } else {
       return false

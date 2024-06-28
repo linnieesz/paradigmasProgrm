@@ -9,6 +9,7 @@ import { LoginModule } from 'src/app/components/login/login.module';
 import { FormsModule } from '@angular/forms';
 import { MenuModule } from './components/menu/menu.module';
 import { RegisterModule } from './components/register/register.module';
+import { CalendarModule } from './components/calendar/calendar.module';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { RegisterModule } from './components/register/register.module';
     LoginModule,
     MenuModule,
     RegisterModule,
+    CalendarModule
   ],
   providers: [],
   bootstrap: [AppComponent],

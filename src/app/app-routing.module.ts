@@ -4,12 +4,16 @@ import { HomePageComponent } from 'src/app/components/home-page/home-page.compon
 import { LoginComponent } from 'src/app/components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { WorkspaceComponent } from './view/workspace.component';
+import { CalendarComponent } from './components/calendar/calendar.component';
+import { FilesComponent } from './components/files/files.component';
 
 const routes: Routes = [
   { path:'login', component: LoginComponent},
   { path: 'home', component: HomePageComponent },  
   { path: 'register', component: RegisterComponent },
   { path: 'workspace', component: WorkspaceComponent },
+  { path: 'files', component: FilesComponent },
+  { path: 'calendar', component: CalendarComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
 ];
 
