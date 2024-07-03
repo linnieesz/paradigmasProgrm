@@ -6,10 +6,11 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomePageModule } from 'src/app/components/home-page/home-page.module';
 import { LoginModule } from 'src/app/components/login/login.module';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MenuModule } from './components/menu/menu.module';
 import { RegisterModule } from './components/register/register.module';
 import { CalendarModule } from './components/calendar/calendar.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -19,12 +20,14 @@ import { CalendarModule } from './components/calendar/calendar.module';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     FormsModule,
     HomePageModule,
     LoginModule,
     MenuModule,
     RegisterModule,
-    CalendarModule
+    CalendarModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { UsuarioService } from 'src/app/services/usuario.service';
 
 @Component({
   selector: 'app-menu',
@@ -8,7 +9,9 @@ import { Router } from '@angular/router';
 })
 export class MenuComponent {
 
-  constructor(private router: Router) {}
+  constructor(private router: Router,
+    private userService: UsuarioService    
+  ) {}
   
   redirectToRegister() {
     return this.router.navigate(['/register'])
@@ -22,7 +25,6 @@ export class MenuComponent {
     return this.router.navigate(['/calendar'])
   }
 
-
   // verify() {
   //   if (this.router.url == '/calendar' || this.router.url == '/workspace') {
   //     return true
@@ -32,7 +34,7 @@ export class MenuComponent {
   // }
 
   leftSite() {
-    return this.router.navigate(['/home'])
+    this.userService.deslogar()
   }
 
   defineHeaderColor() {

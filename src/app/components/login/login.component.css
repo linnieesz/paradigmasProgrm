@@ -67,4 +67,5 @@ button {
     border: none;
     border-radius: 20px;
     letter-spacing: 0.08em;
+    cursor: pointer;
 }
