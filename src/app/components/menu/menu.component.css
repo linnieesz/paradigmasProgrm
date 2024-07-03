@@ -28,6 +28,12 @@
     cursor: pointer;
 }
 
+.files_title {
+    font-family: "Cabin", sans-serif;
+    letter-spacing: .1rem;
+    margin-left: 2em;
+}
+
 .buttons_pattern:hover {
     background-color: #f4f4f4;
 }

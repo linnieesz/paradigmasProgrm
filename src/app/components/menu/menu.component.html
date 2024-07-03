@@ -1,6 +1,6 @@
 <div [style]="defineHeaderColor()" class="app_menu">
 
-        <div class="buttons_left">
+        <div class="buttons_left" *ngIf="verify()">
             <div class="register_patient">
                 <button (click)="redirectToRegister()" class="buttons_pattern">cadastro</button>
             </div>
@@ -12,6 +12,10 @@
             <div class="access_calendar">
                 <button (click)="redirectToCalendar()"  class="buttons_pattern">calendário</button>
             </div>
+        </div>
+
+        <div class="files_title" *ngIf="!verify()">
+            <span>FICHAS</span>
         </div>
 
     

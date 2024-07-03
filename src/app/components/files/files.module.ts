@@ -1,8 +1,9 @@
-import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from "@angular/core";
+import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { AppRoutingModule } from "src/app/app-routing.module";
 import { FilesComponent } from "./files.component";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 
 
 @NgModule({
@@ -12,6 +13,8 @@ import { FilesComponent } from "./files.component";
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
     BrowserAnimationsModule
   ],
   exports: [
@@ -21,4 +24,4 @@ import { FilesComponent } from "./files.component";
   bootstrap: [FilesComponent]
   
 })
-export class RegisterModule { }
+export class FilesModule { }

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { IUsuario } from 'src/app/interfaces/IUsuario';
 import { UsuarioService } from 'src/app/services/usuario.service';
 
@@ -12,7 +13,8 @@ export class LoginComponent {
 
   formLogin: FormGroup;
   constructor(private formBuilder: FormBuilder,
-              private usuarioService: UsuarioService
+              private usuarioService: UsuarioService,
+              private router: Router
             ) { }
   ngOnInit(): void {
     this.criarForm();
@@ -39,5 +41,9 @@ export class LoginComponent {
           console.log("deu ruim")
         }
     })
+  }
+
+  goToHome() {
+    this.router.navigate(['/home'])
   }
 }

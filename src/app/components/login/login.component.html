@@ -1,7 +1,9 @@
 <div id="login-container">
     <div id="login">
-        <h1 class="login-title">Bem vindo</h1>
-        <img class="login-image" src="assets\icons\brain-icon.svg">
+        <div class="login_icon" (click)="goToHome()">
+            <h1 class="login-title">Bem vindo</h1>
+            <img class="login-image" src="assets\icons\brain-icon.svg">
+        </div>
         <form [formGroup]="formLogin" novalidate>
             <div class="user-input">
                 <input formControlName="user" class="input-style" type="text" id="fname" name="fname" placeholder="usuário"><br>

@@ -11,6 +11,7 @@ import { MenuModule } from './components/menu/menu.module';
 import { RegisterModule } from './components/register/register.module';
 import { CalendarModule } from './components/calendar/calendar.module';
 import { HttpClientModule } from '@angular/common/http';
+import { FilesModule } from './components/files/files.module';
 
 @NgModule({
   declarations: [
@@ -22,12 +23,13 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserAnimationsModule,
     HttpClientModule,
     FormsModule,
+    ReactiveFormsModule,
     HomePageModule,
     LoginModule,
     MenuModule,
     RegisterModule,
-    CalendarModule,
-    ReactiveFormsModule
+    FilesModule,
+    CalendarModule
   ],
   providers: [],
   bootstrap: [AppComponent],

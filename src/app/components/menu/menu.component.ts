@@ -25,13 +25,13 @@ export class MenuComponent {
     return this.router.navigate(['/calendar'])
   }
 
-  // verify() {
-  //   if (this.router.url == '/calendar' || this.router.url == '/workspace') {
-  //     return true
-  //   } else {
-  //     return false
-  //   }
-  // }
+  verify() {
+    if (this.router.url == '/calendar' || this.router.url == '/workspace') {
+      return true
+    } else {
+      return false
+    }
+  }
 
   leftSite() {
     this.userService.deslogar()

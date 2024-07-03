@@ -2,15 +2,38 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 5%;
+    margin-top: 3%;
+}
+
+.content_block {
+    width: 50em;
+    height: 25em;
+    cursor: pointer;
 }
 
 .your_image {
-    margin-bottom: 11em;
+    float: left;
+    margin-top: 10%;
+    margin-left: 11%;
+    display: inline-block;
+}
+
+.your_image_config {
+    height: 2.5em;
+}
+
+.time_image_config {
+    height: 20em;
 }
 
 .time_image {
-    /* background-color:; */
+    margin-top: 2em;
+    display: inline-block;
+}
+
+.workspace_image {
+
+    display: inline-block;
 }
 
 @media (min-width: 1920px) {
