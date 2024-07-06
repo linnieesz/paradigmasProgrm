@@ -4,10 +4,10 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-files',
-  templateUrl: './files.component.html',
-  styleUrls: ['./files.component.css']
+  templateUrl: './files-profile.component.html',
+  styleUrls: ['./files-profile.component.css']
 })
-export class FilesComponent {
+export class FilesProfileComponent {
   
   queryField = new FormControl('');
 
@@ -15,6 +15,14 @@ export class FilesComponent {
 
   onSearch() {
     console.log(this.queryField.value)
+  }
+
+  goBack() {
+    this.router.navigate(['/workspace'])
+  }
+
+  edit() {
+    
   }
 
 }

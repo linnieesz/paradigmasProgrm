@@ -1,0 +1,42 @@
+.center_content {
+    text-align: center;
+    width: 100%;
+    margin-top: 3%;
+}
+
+.register_title {
+    font-family: "Cabin", sans-serif;
+    letter-spacing: .05rem;
+    font-weight: 600;
+}
+
+.sub_title {
+    margin-bottom: 7%;
+}
+
+.register_anamnese {
+    margin-right: 10em;
+}
+
+.register_anamnese, .register_profile {
+    display: inline-block;
+}
+
+button:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+} 
+.register_anamnese button:hover, .register_profile button:hover {
+    background-color: #d9d9d9;
+    height: 3.2em;
+    width: 10.2em;
+}
+
+.register_anamnese button, .register_profile button {
+    border-style: none;
+    border-radius: 5px;
+    background-color: #ECECEC;
+    height: 3em;
+    width: 10em;
+    cursor: pointer;
+}

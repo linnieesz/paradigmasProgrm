@@ -7,11 +7,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomePageModule } from 'src/app/components/home-page/home-page.module';
 import { LoginModule } from 'src/app/components/login/login.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { MenuModule } from './components/menu/menu.module';
 import { RegisterModule } from './components/register/register.module';
 import { CalendarModule } from './components/calendar/calendar.module';
 import { HttpClientModule } from '@angular/common/http';
 import { FilesModule } from './components/files/files.module';
+import { MenuModule } from './shared/menu/menu.module';
+import { GoBackModule } from './shared/go-back/go-back.module';
+import { FilesAnamneseModule } from './components/files-anamnese/files-anamnese.module';
+import { FilesProfileModule } from './components/files-profile/files-profile.module';
 
 @NgModule({
   declarations: [
@@ -29,7 +32,10 @@ import { FilesModule } from './components/files/files.module';
     MenuModule,
     RegisterModule,
     FilesModule,
-    CalendarModule
+    CalendarModule,
+    GoBackModule,
+    FilesAnamneseModule,
+    FilesProfileModule
   ],
   providers: [],
   bootstrap: [AppComponent],

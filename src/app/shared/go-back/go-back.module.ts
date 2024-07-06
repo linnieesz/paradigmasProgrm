@@ -1,27 +1,25 @@
-import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from "@angular/core";
+import { CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA, NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { AppRoutingModule } from "src/app/app-routing.module";
-import { WorkspaceComponent } from "./workspace.component";
-import { MenuModule } from "../shared/menu/menu.module";
+import { GoBackComponent } from "./go-back.component";
 
 
 @NgModule({
   declarations: [
-    WorkspaceComponent
+    GoBackComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule,
-    MenuModule
+    BrowserAnimationsModule
   ],
   exports: [
-    WorkspaceComponent
+    GoBackComponent
   ],
   providers: [],
-  bootstrap: [WorkspaceComponent],
+  bootstrap: [GoBackComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   
 })
-export class WorkspaceModule { }
+export class GoBackModule { }

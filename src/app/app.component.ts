@@ -12,7 +12,15 @@ export class AppComponent {
   constructor(private router: Router) { }
 
   verify() {
-    if (this.router.url == '/workspace' ||  this.router.url == '/calendar' || this.router.url == '/files') {
+    if (this.router.url == '/workspace' ||  this.router.url == '/calendar' || this.router.url == '/files' || this.router.url == '/register' || this.router.url == '/anamnese' || this.router.url == '/profile') {
+      return true
+    } else {
+      return false
+    }
+  }
+
+  verifyTree() {
+    if (this.router.url == '/calendar' ||  this.router.url == '/files' || this.router.url == '/register') {
       return true
     } else {
       return false

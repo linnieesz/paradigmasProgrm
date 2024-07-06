@@ -26,7 +26,7 @@ export class MenuComponent {
   }
 
   verify() {
-    if (this.router.url == '/calendar' || this.router.url == '/workspace') {
+    if (this.router.url == '/calendar' || this.router.url == '/workspace' || this.router.url == '/register') {
       return true
     } else {
       return false
@@ -38,11 +38,12 @@ export class MenuComponent {
   }
 
   defineHeaderColor() {
-    if (this.router.url == '/files') {
+    if (this.router.url == '/files' || this.router.url == '/register') {
       return {
-        background: '#5AAEED'
+        background: '#5AAEED',
+        color: '#fff'
       };
-    } else if (this.router.url == '/calendar') {
+    } else if (this.router.url == '/calendar' || this.router.url == '/anamnese' || this.router.url == '/profile') {
       return {
         background: '#C9EEEF'
       };

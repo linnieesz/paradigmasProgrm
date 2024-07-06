@@ -59,6 +59,11 @@ button {
     width: 50%;
 }
 
+input:focus {
+    box-shadow: 2px 2px #cecece;
+    outline: 0;
+}
+
 .enter-button {
     margin-left: 30%;
     margin-top: 8%;

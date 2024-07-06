@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-register',
@@ -8,9 +8,18 @@ import { Router } from '@angular/router';
 })
 export class RegisterComponent {
 
-  constructor(private router: Router) {}
+  constructor(private route: ActivatedRoute,
+    private router: Router) {}
 
   click() {
     this.router.navigate(['/login']);
+  }
+  
+  goToAnamnese() {
+    this.router.navigate(['anamnese']);
+  }
+  
+  goToProfile() {
+    this.router.navigate(['profile']);
   }
 }

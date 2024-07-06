@@ -4,10 +4,10 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-files',
-  templateUrl: './files.component.html',
-  styleUrls: ['./files.component.css']
+  templateUrl: './files-anamnese.component.html',
+  styleUrls: ['./files-anamnese.component.css']
 })
-export class FilesComponent {
+export class FilesAnamneseComponent {
   
   queryField = new FormControl('');
 
