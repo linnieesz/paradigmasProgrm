@@ -13,8 +13,12 @@ export class FilesAnamneseComponent {
 
   constructor(private router: Router) {}
 
-  onSearch() {
-    console.log(this.queryField.value)
+  goBack() {
+    this.router.navigate(['/workspace'])
+  }
+
+  edit() {
+    
   }
 
 }

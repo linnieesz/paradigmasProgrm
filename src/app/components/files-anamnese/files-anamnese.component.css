@@ -1,11 +1,59 @@
-.center_content {
-    text-align: center;
-    width: 100%;
-    /* margin-top: 3%; */
+input:focus, textarea:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+} 
+
+.back_tree {
+    margin-left: 2em;
+    margin-top: 1%;
+    margin-bottom: 2em;
 }
 
-.search_title {
-    font-family: "Cabin", sans-serif;
-    margin-bottom: 1%;
-    letter-spacing: .05rem;
+.go_back {
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+
+.register_container {
+    margin-top: 4%;
+    margin-left: 7%;
+    margin-right: 7%;
+    width: 90%;
+}
+
+.sec_one {
+    display: inline-flex;
+}
+
+.sec_two textarea{
+    background-color: #f3f3f3;
+    width: 90%;
+    height: 6em;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: none;
+}
+
+.initial_information {
+    border-radius: 2em;
+    width: 40em;
+    background-color: #f3f3f3;
+}
+
+.input_lines input {
+    /* border-style: none; */
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.title_const {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 2%;
 }

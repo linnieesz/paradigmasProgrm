@@ -1,4 +1,4 @@
-input:focus {
+input:focus, textarea:focus {
     box-shadow: 0 0 0 0;
     outline: 0;
 } 
@@ -35,15 +35,18 @@ input:focus {
     margin-left: 7%;
     margin-right: 7%;
     display: flex;
+    width: 90%;
 }
 
 .inputs_container {
-    margin-right: 11%;
+    /* margin-right: 11%; */
+    width: 150%;
 }
 
 .first_lign {
     margin-top: 1em;
-    width: 40em;
+    width: 100%;
+    display: inline-flex;
 }
 
 .input_style, .text_area {
@@ -55,28 +58,26 @@ input:focus {
 
 .input_style {
     width: 150%;
+    padding: 5px 0 5px 8px;
 }
 
-.input_name, .input_birth {
-    display: inline-block;
-}
 
 .input_name {
-    margin-right: 30%;
-}
-
-.input_style {
-    padding: 5px 0 5px 8px;
+    margin-right: 24%;
 }
 
 .lign_obs {
     width: 100%;
-    margin-left: 2%;
     text-align: center;
+    background-image: url("src/assets/profile/profile-icon.svg");
+    background-position-x: 10px;
+    background-position-y: -5px;
+    background-repeat: no-repeat;
+    background-size: 5em;
 }
 
 .lign_obs textarea {
-    width: 100%;
+    width: 80%;
     height: 280px;
     padding: 12px 20px;
     box-sizing: border-box;
